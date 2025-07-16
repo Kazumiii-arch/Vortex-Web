@@ -842,6 +842,29 @@ td.actions {
     color: var(--text-muted);
 }
 
+/* --- Support Ticket Statuses --- */
+.status-badge.open {
+    background-color: #a16207; /* Orange/Yellow */
+    color: #fefce8;
+}
+
+.status-badge.closed {
+    background-color: #4b5563; /* Gray */
+    color: #e5e7eb;
+}
+
+/* A generic link style for use in tables */
+td a.link {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+td a.link:hover {
+    text-decoration: underline;
+    color: var(--primary-color);
+}
+
 /* ===================================
    Footer
    =================================== */
