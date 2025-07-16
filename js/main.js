@@ -72,3 +72,20 @@ tabs.forEach(tab => {
     target.classList.add('active');
   });
 });
+// === Wishlist Button Logic ===
+const wishlistButton = document.querySelector('.wishlist-button');
+
+if (wishlistButton) {
+    wishlistButton.addEventListener('click', () => {
+        // Toggle the 'active' class on the button
+        wishlistButton.classList.toggle('active');
+
+        // In a real app, you would add/remove the product ID from a list
+        // in localStorage or send a request to the backend.
+        if (wishlistButton.classList.contains('active')) {
+            console.log('Product added to wishlist (simulation)');
+        } else {
+            console.log('Product removed from wishlist (simulation)');
+        }
+    });
+}
