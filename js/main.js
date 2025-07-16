@@ -90,3 +90,22 @@ if (wishlistButton) {
         }
     });
 }
+
+// === Admin Panel Logic ===
+const denyButtons = document.querySelectorAll('.deny-button');
+
+denyButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const reason = window.prompt('Please provide a reason for denying this product:');
+        
+        if (reason) {
+            // In a real app, you would send this reason to the backend.
+            console.log(`Product denied. Reason: ${reason}`);
+            // You could also remove the item from the list visually.
+            button.closest('tr').style.opacity = '0.5';
+            button.closest('tr').style.pointerEvents = 'none';
+        } else {
+            console.log('Denial cancelled.');
+        }
+    });
+});
