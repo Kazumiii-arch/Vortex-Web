@@ -157,26 +157,34 @@ nav {
 }
 
 .card-image {
-    height: 180px;
-    background-color: #333;
+    height: auto;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 .card h3 {
     font-size: 1.2rem;
-    padding: 1rem 1rem 0.25rem 1rem;
 }
 
 .card .author {
     color: var(--text-muted);
     font-size: 0.9rem;
-    padding: 0 1rem;
+    margin-top: 0.25rem;
 }
 
 .card-footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    padding-top: 1rem;
     margin-top: auto;
     border-top: 1px solid var(--border-color);
 }
@@ -230,6 +238,7 @@ nav {
     aspect-ratio: 16 / 9;
     border-radius: 8px;
     border: 1px solid var(--border-color);
+    object-fit: cover;
 }
 
 .thumbnail-images {
@@ -244,6 +253,7 @@ nav {
     border-radius: 4px;
     border: 2px solid transparent;
     cursor: pointer;
+    object-fit: cover;
 }
 
 .thumb-img.active {
@@ -310,11 +320,20 @@ nav {
     padding: 1rem 1.5rem;
     font-size: 1rem;
     border-bottom: 3px solid transparent;
+    cursor: pointer;
 }
 
 .tab-button.active {
     color: var(--primary-color);
     border-bottom-color: var(--primary-color);
+}
+
+.tab-content {
+    display: none; /* Hide all tab content by default */
+}
+
+.tab-content.active {
+    display: block; /* Only show the active tab content */
 }
 
 .tab-content h2, .tab-content h3 {
@@ -396,4 +415,4 @@ footer {
     margin-top: 2rem;
     color: var(--text-muted);
     border-top: 1px solid var(--border-color);
-  }
+}
