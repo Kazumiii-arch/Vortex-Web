@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Product - Kazu's Marketplace</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="index.html" class="logo-link">Kazu's Marketplace</a></div>
+            <div class="nav-links">
+                <a href="dashboard.html" class="button primary">Dashboard</a>
+                <a href="#" class="button">Log Out</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="form-page">
+        <div class="form-container large">
+            <h1>Upload New Product</h1>
+            <p class="form-description">Fill out the details below to submit your product for review.</p>
+            <form>
+                <div class="form-group">
+                    <label for="product-title">Product Title</label>
+                    <input type="text" id="product-title" name="product-title" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="product-description">Product Description</label>
+                    <textarea id="product-description" name="product-description" rows="6" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="price">Price (USD)</label>
+                    <input type="number" id="price" name="price" min="0" step="0.01" placeholder="0.00 for free" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="tags">Game Compatibility Tags</label>
+                    <input type="text" id="tags" name="tags" placeholder="e.g. Minecraft, 1.20.4, Spigot, Plugin">
+                </div>
+                
+                <div class="form-group-split">
+                    <div class="form-group">
+                        <label for="product-file">Product File (.zip, .rar)</label>
+                        <input type="file" id="product-file" name="product-file" class="file-input" hidden>
+                        <label for="product-file" class="button file-input-label">
+                            <i class="fa-solid fa-upload"></i> Choose File
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label for="product-images">Images (up to 5)</label>
+                        <input type="file" id="product-images" name="product-images" class="file-input" multiple hidden>
+                        <label for="product-images" class="button file-input-label">
+                            <i class="fa-solid fa-image"></i> Choose Images
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Visibility</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="visibility" value="public" checked> Public</label>
+                        <label><input type="radio" name="visibility" value="hidden"> Hidden</label>
+                        <label><input type="radio" name="visibility" value="draft"> Draft</label>
+                    </div>
+                </div>
+
+                <button type="submit" class="button primary large full-width">Submit for Review</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="./js/main.js" defer></script>
+</body>
+</html>
