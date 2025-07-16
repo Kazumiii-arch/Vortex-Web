@@ -746,6 +746,35 @@ td.actions {
     margin-bottom: 0.5rem;
 }
 
+/* --- Wishlist Button Styles --- */
+.wishlist-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.wishlist-button .fa-solid.fa-heart {
+    display: none; /* Hide solid heart by default */
+    color: #ef4444; /* Red */
+}
+
+.wishlist-button .fa-regular.fa-heart {
+    display: inline-block; /* Show empty heart by default */
+}
+
+.wishlist-button.active .fa-solid.fa-heart {
+    display: inline-block; /* Show solid heart when active */
+}
+
+.wishlist-button.active .fa-regular.fa-heart {
+    display: none; /* Hide empty heart when active */
+}
+
+.wishlist-button.active span {
+    display: none; /* Hide text when active */
+}
+
 /* ===================================
    Footer
    =================================== */
