@@ -669,6 +669,84 @@ td.actions {
 }
 
 /* ===================================
+   Comments Section Styles
+   =================================== */
+.comments-section {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.comments-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.comment-form {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.comment-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.comment-form textarea {
+    flex-grow: 1; /* Allow textarea to take up available space */
+    background-color: #252525;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    color: var(--text-color);
+    padding: 0.75rem;
+    font-family: inherit;
+    font-size: 1rem;
+    min-height: 50px;
+    resize: vertical;
+}
+
+.comment-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.comment {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.comment-body {
+    background-color: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1rem;
+    width: 100%;
+}
+
+.comment-author {
+    font-weight: bold;
+}
+
+.comment-author a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+.comment-author a:hover {
+    text-decoration: underline;
+}
+
+.comment-date {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-bottom: 0.5rem;
+}
+
+/* ===================================
    Footer
    =================================== */
 footer {
