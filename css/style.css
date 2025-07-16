@@ -64,6 +64,17 @@ body {
     width: 100%;
 }
 
+.button.small {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+}
+
+.button.danger {
+    background-color: #991b1b; /* Red */
+    border-color: #991b1b;
+    color: white;
+}
+
 
 /* ===================================
    Header & Navigation
@@ -421,7 +432,6 @@ nav {
     }
 }
 
-/* --- Sidebar --- */
 .dashboard-sidebar {
     background-color: var(--surface-color);
     padding: 1.5rem 1rem;
@@ -455,7 +465,6 @@ nav {
     text-align: center;
 }
 
-/* --- Main Content --- */
 .dashboard-content {
     padding: 2rem;
     width: 100%;
@@ -476,7 +485,6 @@ nav {
     margin-right: 0.5rem;
 }
 
-/* --- Table Styles --- */
 .content-table {
     background-color: var(--surface-color);
     border: 1px solid var(--border-color);
@@ -526,16 +534,7 @@ td.actions {
     gap: 0.5rem;
 }
 
-.button.small {
-    padding: 0.4rem 0.8rem;
-    font-size: 0.9rem;
-}
 
-.button.danger {
-    background-color: #991b1b; /* Red */
-    border-color: #991b1b;
-    color: white;
-}
 /* ===================================
    Footer
    =================================== */
@@ -545,4 +544,4 @@ footer {
     margin-top: 2rem;
     color: var(--text-muted);
     border-top: 1px solid var(--border-color);
-}
+   }
