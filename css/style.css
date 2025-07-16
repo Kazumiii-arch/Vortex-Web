@@ -866,6 +866,33 @@ td a.link:hover {
 }
 
 /* ===================================
+   Settings Page Styles
+   =================================== */
+.settings-section {
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.settings-section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.settings-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* A compact version of our form container for this page */
+.form-container.compact {
+    max-width: 600px;
+    padding: 0;
+    background: none;
+    border: none;
+}
+
+/* ===================================
    Footer
    =================================== */
 footer {
