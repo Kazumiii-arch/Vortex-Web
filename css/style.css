@@ -533,7 +533,61 @@ td.actions {
     display: flex;
     gap: 0.5rem;
 }
+/* ===================================
+   Upload Form Styles
+   =================================== */
+.form-container.large {
+    max-width: 800px;
+}
 
+.form-description {
+    text-align: center;
+    color: var(--text-muted);
+    margin-bottom: 2rem;
+    margin-top: -1rem;
+}
+
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #252525;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    color: var(--text-color);
+    font-size: 1rem;
+    font-family: inherit;
+    resize: vertical;
+}
+
+.form-group-split {
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: column; /* Stack on mobile */
+}
+
+@media (min-width: 768px) {
+    .form-group-split {
+        flex-direction: row; /* Side-by-side on larger screens */
+    }
+}
+
+.file-input-label {
+    display: inline-block;
+    text-align: center;
+}
+
+.file-input-label i {
+    margin-right: 0.5rem;
+}
+
+.radio-group {
+    display: flex;
+    gap: 1.5rem;
+    background-color: #252525;
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+}
 
 /* ===================================
    Footer
