@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - Kazu's Marketplace</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="index.html" class="logo-link">Kazu's Marketplace</a></div>
+            <div id="nav-links" class="nav-links">
+                <a href="login.html" class="button">Login</a>
+                <a href="register.html" class="button primary">Register</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="profile-page-container">
+        <header class="profile-header">
+            <div class="profile-avatar">
+                <img src="https://via.placeholder.com/150/6a5acd/ffffff?text=D" alt="DevUser1's avatar">
+            </div>
+            <div class="profile-info">
+                <h1>DevUser1 <span class="verified-badge">✔ Verified</span></h1>
+                <p class="profile-bio">Creator of high-quality plugins for Minecraft servers. Focused on performance and reliability.</p>
+                <div class="profile-stats">
+                    <span><i class="fa-solid fa-box-archive"></i> 3 Products</span>
+                    <span><i class="fa-solid fa-download"></i> 462 Sales</span>
+                    <span><i class="fa-solid fa-star"></i> 4.8 Avg. Rating</span>
+                </div>
+            </div>
+        </header>
+
+        <section class="profile-products">
+            <h2>Products by DevUser1</h2>
+            <div class="products">
+                <article class="card">
+                    <img class="card-image" src="https://via.placeholder.com/400x250/1e1e1e/6a5acd?text=Plugin+Image" alt="Advanced Economy Plugin">
+                    <div class="card-body">
+                        <h3>Advanced Economy Plugin</h3>
+                        <div class="card-footer">
+                            <span class="price">$14.99</span>
+                            <a href="product.html" class="button">View Details</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <img class="card-image" src="https://via.placeholder.com/400x250/1e1e1e/6a5acd?text=Bot+Image" alt="Chat Moderation Bot">
+                     <div class="card-body">
+                        <h3>Chat Moderation Bot</h3>
+                        <div class="card-footer">
+                            <span class="price">$9.99</span>
+                            <a href="product.html" class="button">View Details</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <img class="card-image" src="https://via.placeholder.com/400x250/1e1e1e/6a5acd?text=New+Engine" alt="New Voxel Engine">
+                     <div class="card-body">
+                        <h3>New Voxel Engine</h3>
+                        <div class="card-footer">
+                            <span class="price">$49.99</span>
+                            <a href="product.html" class="button">View Details</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="main-footer">
+        <p>&copy; 2025 Kazu's Marketplace. All rights reserved.</p>
+    </footer>
+
+    <script src="./js/main.js" defer></script>
+</body>
+</html>
