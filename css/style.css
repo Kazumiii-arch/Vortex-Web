@@ -590,6 +590,85 @@ td.actions {
 }
 
 /* ===================================
+   User Profile Page Styles
+   =================================== */
+.profile-page-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 5%;
+}
+
+.profile-header {
+    background-color: var(--surface-color);
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column; /* Stack on mobile */
+    align-items: center;
+    gap: 1.5rem;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .profile-header {
+        flex-direction: row; /* Side-by-side on larger screens */
+        text-align: left;
+    }
+}
+
+.profile-avatar img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid var(--primary-color);
+}
+
+.profile-info h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.profile-bio {
+    color: var(--text-muted);
+    max-width: 60ch; /* Limit line length for readability */
+    margin-bottom: 1rem;
+}
+
+.profile-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .profile-stats {
+        justify-content: flex-start;
+    }
+}
+
+.profile-stats span {
+    color: var(--text-color);
+}
+
+.profile-stats i {
+    color: var(--primary-color);
+    margin-right: 0.5rem;
+}
+
+.profile-products {
+    margin-top: 3rem;
+}
+
+.profile-products h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 1rem;
+}
+
+/* ===================================
    Footer
    =================================== */
 footer {
