@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Dashboard - Kazu's Marketplace</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="index.html" class="logo-link">Kazu's Marketplace</a></div>
+            <div class="nav-links">
+                <a href="dashboard.html" class="button primary">Dashboard</a>
+                <a href="#" class="button">Log Out</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="dashboard-container">
+        <aside class="dashboard-sidebar">
+            <nav class="sidebar-nav">
+                <a href="#">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <span>Dashboard</span>
+                </a>
+                <a href="#" class="active">
+                    <i class="fa-solid fa-box-archive"></i>
+                    <span>My Products</span>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                    <span>Sales</span>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-ticket"></i>
+                    <span>Support</span>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>Settings</span>
+                </a>
+            </nav>
+        </aside>
+
+        <main class="dashboard-content">
+            <div class="content-header">
+                <h1>My Products</h1>
+                <a href="#" class="button primary">
+                    <i class="fa-solid fa-plus"></i> Upload New Product
+                </a>
+            </div>
+
+            <div class="content-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product Name</th>
+                            <th>Status</th>
+                            <th>Price</th>
+                            <th>Sales</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Advanced Economy Plugin</td>
+                            <td><span class="status-badge public">Public</span></td>
+                            <td>$14.99</td>
+                            <td>152</td>
+                            <td class="actions">
+                                <a href="#" class="button small"><i class="fa-solid fa-pencil"></i> Edit</a>
+                                <a href="#" class="button small danger"><i class="fa-solid fa-trash"></i> Delete</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Chat Moderation Bot</td>
+                            <td><span class="status-badge public">Public</span></td>
+                            <td>$9.99</td>
+                            <td>310</td>
+                            <td class="actions">
+                                <a href="#" class="button small"><i class="fa-solid fa-pencil"></i> Edit</a>
+                                <a href="#" class="button small danger"><i class="fa-solid fa-trash"></i> Delete</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>New Voxel Engine</td>
+                            <td><span class="status-badge draft">Draft</span></td>
+                            <td>$49.99</td>
+                            <td>0</td>
+                            <td class="actions">
+                                <a href="#" class="button small"><i class="fa-solid fa-pencil"></i> Edit</a>
+                                <a href="#" class="button small danger"><i class="fa-solid fa-trash"></i> Delete</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+
+    <script src="./js/main.js" defer></script>
+</body>
+</html>
