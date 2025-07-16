@@ -893,6 +893,27 @@ td a.link:hover {
 }
 
 /* ===================================
+   Admin Panel Styles
+   =================================== */
+.admin-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 5%;
+}
+
+.approve-button {
+    background-color: #166534; /* Green */
+    border-color: #166534;
+    color: white;
+}
+
+.deny-button {
+    background-color: #991b1b; /* Red */
+    border-color: #991b1b;
+    color: white;
+   }
+
+/* ===================================
    Footer
    =================================== */
 footer {
