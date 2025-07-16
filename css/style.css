@@ -913,6 +913,15 @@ td a.link:hover {
     color: white;
    }
 
+/* --- License Key Style --- */
+.license-key {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #2a2a2a;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    color: var(--text-color);
+}
+
 /* ===================================
    Footer
    =================================== */
