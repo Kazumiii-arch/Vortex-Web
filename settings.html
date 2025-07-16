@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Settings - Kazu's Marketplace</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="index.html" class="logo-link">Kazu's Marketplace</a></div>
+            <div id="nav-links" class="nav-links">
+                <a href="dashboard.html" class="button primary">Dashboard</a>
+                <a href="#" id="logout-button" class="button">Log Out</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="dashboard-container">
+        <aside class="dashboard-sidebar">
+            <nav class="sidebar-nav">
+                <a href="dashboard.html">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <span>Dashboard</span>
+                </a>
+                <a href="dashboard.html">
+                    <i class="fa-solid fa-box-archive"></i>
+                    <span>My Products</span>
+                </a>
+                <a href="sales.html">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                    <span>Sales</span>
+                </a>
+                <a href="support.html">
+                    <i class="fa-solid fa-ticket"></i>
+                    <span>Support</span>
+                </a>
+                <a href="settings.html" class="active">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>Settings</span>
+                </a>
+            </nav>
+        </aside>
+
+        <main class="dashboard-content">
+            <div class="content-header">
+                <h1>Account Settings</h1>
+            </div>
+
+            <div class="settings-section">
+                <h2>Edit Profile</h2>
+                <form class="form-container compact">
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" value="DevUser1">
+                    </div>
+                    <div class="form-group">
+                        <label for="bio">Profile Bio</label>
+                        <textarea id="bio" rows="4">Creator of high-quality plugins for Minecraft servers. Focused on performance and reliability.</textarea>
+                    </div>
+                    <button type="submit" class="button primary">Save Profile</button>
+                </form>
+            </div>
+            
+            <div class="settings-section">
+                <h2>Change Password</h2>
+                <form class="form-container compact">
+                    <div class="form-group">
+                        <label for="current-password">Current Password</label>
+                        <input type="password" id="current-password">
+                    </div>
+                    <div class="form-group">
+                        <label for="new-password">New Password</label>
+                        <input type="password" id="new-password">
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm-new-password">Confirm New Password</label>
+                        <input type="password" id="confirm-new-password">
+                    </div>
+                    <button type="submit" class="button primary">Update Password</button>
+                </form>
+            </div>
+        </main>
+    </div>
+
+    <script src="./js/main.js" defer></script>
+</body>
+</html>
