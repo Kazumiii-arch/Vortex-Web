@@ -3,6 +3,7 @@ function updateHeaderForLoggedInUser() {
     const navLinks = document.getElementById('nav-links');
     if (navLinks) {
         navLinks.innerHTML = `
+            <a href="wishlist.html" class="button" title="Wishlist"><i class="fa-solid fa-heart"></i></a>
             <a href="dashboard.html" class="button">Dashboard</a>
             <a href="#" id="logout-button" class="button primary">Log Out</a>
         `;
