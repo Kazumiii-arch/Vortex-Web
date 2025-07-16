@@ -1,1 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Kazu's Marketplace</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="index.html" class="logo-link">Kazu's Marketplace</a></div>
+            <div class="nav-links">
+                <a href="login.html" class="button">Login</a>
+                <a href="register.html" class="button primary">Register</a>
+            </div>
+        </nav>
+    </header>
 
+    <main class="form-page">
+        <div class="form-container">
+            <h1>Welcome Back</h1>
+            <form>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="button primary large full-width">Login</button>
+            </form>
+            <p class="form-switch">Don't have an account? <a href="register.html">Register here</a></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Kazu's Marketplace. All rights reserved.</p>
+    </footer>
+
+    <script src="./js/main.js" defer></script>
+</body>
+</html>
