@@ -1,0 +1,399 @@
+/* ===================================
+   Global Styles & Dark Theme
+   - Sets up the color palette, fonts, and basic body styles.
+   =================================== */
+:root {
+    --bg-color: #121212;
+    --surface-color: #1e1e1e;
+    --primary-color: #6a5acd; /* Slate Blue / Purple */
+    --text-color: #e0e0e0;
+    --text-muted: #888;
+    --border-color: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+
+/* ===================================
+   Reusable Components
+   - Styles for common elements like buttons.
+   =================================== */
+.button {
+    text-decoration: none;
+    color: var(--text-color);
+    background-color: #333;
+    padding: 0.6rem 1.2rem;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+    border: 1px solid var(--border-color);
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #444;
+}
+
+.button.primary {
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+.button.primary:hover {
+    background-color: #7b68ee; /* Lighter purple */
+}
+
+.button.large {
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.button.full-width {
+    width: 100%;
+}
+
+
+/* ===================================
+   Header & Navigation
+   =================================== */
+header {
+    background-color: var(--surface-color);
+    border-bottom: 1px solid var(--border-color);
+    padding: 1rem 5%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logo a.logo-link {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.search-bar {
+    display: flex;
+    flex-grow: 1;
+    max-width: 500px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+    background-color: #252525;
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+.search-bar button {
+    padding: 0 1rem;
+    border: 1px solid var(--primary-color);
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 0 5px 5px 0;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+/* ===================================
+   Homepage Styles (index.html)
+   =================================== */
+.hero {
+    text-align: center;
+    padding: 4rem 1rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.product-grid {
+    padding: 2rem 0;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    background-color: var(--surface-color);
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.card-image {
+    height: 180px;
+    background-color: #333;
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    padding: 1rem 1rem 0.25rem 1rem;
+}
+
+.card .author {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    padding: 0 1rem;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin-top: auto;
+    border-top: 1px solid var(--border-color);
+}
+
+.card .price {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+
+/* ===================================
+   Product Details Page Styles (product.html)
+   =================================== */
+.product-page-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 5%;
+}
+
+.breadcrumbs {
+    padding: 1rem 0;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.breadcrumbs a {
+    color: var(--text-muted);
+    text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+    color: var(--primary-color);
+}
+
+.product-main-info {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+    .product-main-info {
+        grid-template-columns: 1.5fr 1fr;
+    }
+}
+
+.main-image {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
+
+.thumbnail-images {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.thumb-img {
+    width: 80px;
+    height: 50px;
+    border-radius: 4px;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+.thumb-img.active {
+    border-color: var(--primary-color);
+}
+
+.product-details .author {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    margin: 0.5rem 0;
+}
+.product-details .author a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+.verified-badge {
+    color: #34d399;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1.5rem 0;
+}
+
+.tag {
+    background-color: #2a2a2a;
+    padding: 0.3rem 0.7rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    border: 1px solid var(--border-color);
+}
+
+.purchase-box {
+    background-color: var(--surface-color);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.purchase-box .price {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.product-lower-info {
+    margin-top: 3rem;
+}
+
+.tabs {
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 1.5rem;
+}
+
+.tab-button {
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    border-bottom: 3px solid transparent;
+}
+
+.tab-button.active {
+    color: var(--primary-color);
+    border-bottom-color: var(--primary-color);
+}
+
+.tab-content h2, .tab-content h3 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.tab-content ul {
+    padding-left: 20px;
+}
+
+
+/* ===================================
+   Login & Register Forms
+   =================================== */
+.form-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 5%;
+    min-height: 60vh;
+}
+
+.form-container {
+    background-color: var(--surface-color);
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    width: 100%;
+    max-width: 450px;
+}
+
+.form-container h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--text-muted);
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #252525;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+.form-switch {
+    text-align: center;
+    margin-top: 1.5rem;
+    color: var(--text-muted);
+}
+
+.form-switch a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.form-switch a:hover {
+    text-decoration: underline;
+}
+
+/* ===================================
+   Footer
+   =================================== */
+footer {
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+    color: var(--text-muted);
+    border-top: 1px solid var(--border-color);
+  }
