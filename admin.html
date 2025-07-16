@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Kazu's Marketplace</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Admin Panel</div>
+            <div class="nav-links">
+                <a href="index.html" class="button">Exit to Site</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="admin-container">
+        <div class="content-header">
+            <h1>Product Approval Queue</h1>
+        </div>
+
+        <div class="content-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Submitted By</th>
+                        <th>Date</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="product.html" class="link">New Voxel Engine</a></td>
+                        <td><a href="profile.html" class="link">DevUser1</a></td>
+                        <td>July 17, 2025</td>
+                        <td class="actions">
+                            <button class="button small approve-button"><i class="fa-solid fa-check"></i> Approve</button>
+                            <button class="button small deny-button"><i class="fa-solid fa-times"></i> Deny</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="product.html" class="link">Survival Game Kit</a></td>
+                        <td><a href="profile.html" class="link">GameKits</a></td>
+                        <td>July 16, 2025</td>
+                        <td class="actions">
+                            <button class="button small approve-button"><i class="fa-solid fa-check"></i> Approve</button>
+                            <button class="button small deny-button"><i class="fa-solid fa-times"></i> Deny</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <script src="./js/main.js" defer></script>
+</body>
+</html>
